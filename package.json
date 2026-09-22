@@ -1,0 +1,22 @@
+{
+  "name": "anime-fight-engine",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Browser-based 3D anime fight scene engine prototype: rig, choreography, camera, VFX, audio and a timeline editor in one continuous scene.",
+  "scripts": {
+    "dev": "node scripts/dev.mjs",
+    "build": "node scripts/build.mjs",
+    "start": "node scripts/serve.mjs dist",
+    "typecheck": "tsc --noEmit -p tsconfig.json",
+    "export:scene": "node scripts/export-scene.mjs",
+    "export:models": "node scripts/export-models.mjs",
+    "test:visual": "node tools/visual-test.mjs"
+  },
+  "devDependencies": {
+    "typescript": ">=5.6.0"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}
